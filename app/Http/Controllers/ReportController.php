@@ -37,11 +37,12 @@ class ReportController extends Controller
 
         return view('pages.report', compact('title'));
     } 
+    
 
     public function detailreport()
     {
         $title = 'RightsReports | Detail Report';
-        
+
 
         return view('pages.detailreport', compact('title'));
     } 
