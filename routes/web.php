@@ -30,4 +30,5 @@ Route::get('/new_report', 'App\Http\Controllers\ReportController@new_report')->n
 Route::get('/proggress_report', 'App\Http\Controllers\ReportController@proggress_report')->name('proggress_report');
 Route::get('/histori_report', 'App\Http\Controllers\ReportController@proggress_report')->name('histori_report');
 Route::get('/detailreport/{id}', 'App\Http\Controllers\ReportController@detailreport');
+Route::post('/proses_report/{id}', 'App\Http\Controllers\ReportController@proses_report');
 

@@ -23,11 +23,17 @@ class ReportController extends Controller
                     ->with('i', ($request->input('page', 1) - 1) * $pagination);
     }
 
-    public function proggress_report()
+    public function proggress_report(Request $request)
     {
         $title = 'RightsReports | Laporan Berjalan';
+        $pagination = 10;
 
-        return view('pages.report', compact('title'));
+        $proggress_report = Report::with('kategori')
+                            ->where('status', 'proses')
+                            ->paginate($pagination);
+
+        return view('pages.report', compact('title', 'proggress_report'))
+                    ->with('i', ($request->input('page', 1) - 1) * $pagination);
     } 
     
 
@@ -39,11 +45,21 @@ class ReportController extends Controller
     } 
 
     
-    public function detailreport()
+    public function detailreport($id)
     {
         $title = 'RightsReports | Detail Report';
+        $detailreport = Report::with('kategori')->where('id',$id)->get();
 
+        return view('pages.detailreport', compact('title', 'detailreport'));
+    } 
 
-        return view('pages.detailreport', compact('title'));
+    public function proses_report(Request $request)
+    {
+        // dd($request);
+        DB::table('reports')->where('id', $request->id)->update([
+            'status' => $request->status,
+        ]);
+    
+        return redirect('/proggress_report');
     } 
 }
