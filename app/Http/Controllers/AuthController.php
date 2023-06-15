@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-// use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Http\RedirectResponse;
 use Alert;
 
 class AuthController extends Controller
@@ -38,6 +38,18 @@ class AuthController extends Controller
             return redirect()->intended('/dashboard');
         }
         return back()->with('loginError', 'Login Failed');
+    }
+
+    public function logout(Request $request): RedirectResponse
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        toast('Akun Anda Telah Berhasil Logout', 'success');
+        return redirect('/');
     }
 
 

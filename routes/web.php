@@ -13,7 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'App\Http\Controllers\AuthController@index');
+
+//Auth
 Route::get('/register', 'App\Http\Controllers\AuthController@register');
 Route::post('/login', 'App\Http\Controllers\AuthController@authenticate');
+Route::post('/logout', 'App\Http\Controllers\AuthController@logout');
+
+//Dashboard
 Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
+
+//Kategori
 Route::get('/kategori', 'App\Http\Controllers\KategoriController@index');
+
+//Report
+Route::get('/new_report', 'App\Http\Controllers\ReportController@new_report')->name('new_report');
+Route::get('/proggress_report', 'App\Http\Controllers\ReportController@proggress_report')->name('proggress_report');
+Route::get('/histori_report', 'App\Http\Controllers\ReportController@proggress_report')->name('histori_report');
+Route::get('/detailreport/{id}', 'App\Http\Controllers\ReportController@detailreport');
+

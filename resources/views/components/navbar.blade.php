@@ -23,12 +23,9 @@
             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                        @if (auth()->user()->ttd)
-                        <img src="{{ asset('storage/' .  auth()->user()->foto) }}" alt class="rounded-circle" />
-                        @else
-                            <img src="{{ asset('img/Logo/mun.png') }}" alt=""
-                            class="rounded-circle">
-                        @endif    
+
+                        <img src="{{ asset('img/Logo/rightsreport.png') }}" alt="" class="rounded-circle">
+
                     </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
@@ -37,17 +34,13 @@
                             <div class="d-flex">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar avatar-online">
-                                        @if (auth()->user()->ttd)
-                                        <img src="{{ asset('storage/' .  auth()->user()->foto) }}" alt class="rounded-circle" />
-                                        @else
-                                            <img src="{{ asset('img/Logo/mun.png') }}" alt=""
+                                        <img src="{{ asset('img/Logo/rightsreport.png') }}" alt=""
                                             class="rounded-circle">
-                                        @endif    
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <span class="fw-semibold d-block">{{ auth()->user()->nama }}</span>
-                                    <small class="text-muted">{{ auth()->user()->jabatan }}</small>
+                                    <span class="fw-semibold d-block"{{ auth()->user()->nama }}></span>
+                                        <small class="text-muted">Jabatan</small>
                                 </div>
                             </div>
                         </a>
@@ -75,7 +68,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <!--/ User -->
         </ul>
     </div>

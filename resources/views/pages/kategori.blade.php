@@ -26,14 +26,14 @@
                                 </td>
                                 <td>{{ $k->kategori }}</td>
                                 <td>{{ $k->deskripsi }}</td>
-                                <td>
+                                <td class="d-flex justify-content-center">
                                     <button class="btn btn-icon btn-primary me-1" type="button" data-bs-toggle="modal"
                                         data-bs-target="#basicModalView{{ $k->id }}" aria-expanded="false"
                                         aria-controls="multiCollapseExample2"> <span class="tf-icons bx bx-edit"></span>
                                     </button>
-                                    <button class="btn btn-icon btn-danger me-1 mt-2" type="button" data-bs-toggle="modal"
+                                    <button class="btn btn-icon btn-info me-1 " type="button" data-bs-toggle="modal"
                                         data-bs-target="#basicModalView{{ $k->id }}" aria-expanded="false"
-                                        aria-controls="multiCollapseExample2"> <span class="tf-icons bx bx-trash"></span>
+                                        aria-controls="multiCollapseExample2"> <span class="tf-icons bx bx-detail"></span>
                                     </button>
                                 </td>
                             </tr>

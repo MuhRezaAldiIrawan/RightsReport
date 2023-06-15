@@ -29,7 +29,7 @@
                             <div class="card shadow-lg">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-center m-b-30 ">
-                                        {{-- <img class="img-fluid" alt="" src="{{ asset('img/Logo/mun.png') }}"> --}}
+                                        <img class="img-fluid" alt="" src="{{ asset('img/Logo/login.png') }}">
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center m-b-30 ">
                                         <h5 class="m-b-0 font-size-13 text-muted">Selamat Datang, Silahkan Login</h5>
@@ -46,7 +46,7 @@
                                         <div class="form-group">
                                             <label class="font-weight-semibold" for="Email" >Email:</label>
                                             <div class="input-affix">
-                                                <i class="prefix-icon anticon anticon-user"></i>
+                                                {{-- <i class='menu-icon tf-icons bx bx-user'></i> --}}
                                                 <input type="text"
                                                     class="form-control"
                                                     id="email" name="email" placeholder="Email" required >
@@ -57,7 +57,7 @@
                                             <a class="float-right font-size-13 text-muted" href="">Forget
                                                 Password?</a>
                                             <div class="input-affix m-b-10">
-                                                <i class="prefix-icon anticon anticon-lock"></i>
+                                                {{-- <i class="prefix-icon anticon anticon-lock"></i> --}}
                                                 <input type="password" class="form-control" id="password"
                                                     name="password" placeholder="Password" required>
                                             </div>
