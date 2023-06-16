@@ -5,6 +5,7 @@
 
 {{-- Content --}}
 @section('content')
+  
     <h5 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Report /</span>Detail Report<i
             class='bx bx-street-view m-1'></i></h5>
 
@@ -21,7 +22,7 @@
                             <div class="input-group input-group-merge">
                                 <span id="basic-icon-default-fullname2" class="input-group-text"><i
                                         class="bx bx-user"></i></span>
-                                <input type="text" class="form-control" value="{{ $d->nama }}" />
+                                <input type="text" class="form-control active" value="{{ $d->nama }}" readonly style="background-color: transparent"/>
                             </div>
                         </div>
                     </div>
@@ -30,7 +31,7 @@
                         <div class="col-sm-10">
                             <div class="input-group input-group-merge">
                                 <span class="input-group-text"><i class="bx bx-envelope"></i></span>
-                                <input type="text" class="form-control" value="{{ $d->email }}" />
+                                <input type="text" class="form-control" value="{{ $d->email }}" readonly style="background-color: transparent" />
                             </div>
                         </div>
                     </div>
@@ -40,7 +41,8 @@
                             <div class="input-group input-group-merge">
                                 <span id="basic-icon-default-phone2" class="input-group-text"><i
                                         class="bx bx-phone"></i></span>
-                                <input type="text" class="form-control phone-mask" value="{{ $d->hp }}" />
+                                <input type="text" class="form-control phone-mask" value="{{ $d->hp }}"
+                                readonly style="background-color: transparent" />
                             </div>
                         </div>
                     </div>
@@ -50,7 +52,7 @@
                             <div class="input-group input-group-merge">
                                 <span id="basic-icon-default-fullname2" class="input-group-text"><i
                                         class="bx bx-building-house"></i></span>
-                                <input type="text" class="form-control" value="{{ $d->jurusan }}" />
+                                <input type="text" class="form-control" value="{{ $d->jurusan }}" readonly style="background-color: transparent" />
                             </div>
                         </div>
                     </div>
@@ -60,7 +62,7 @@
                             <div class="input-group input-group-merge">
                                 <span class="input-group-text"><i class="bx bx-home"></i></span>
                                 <input type="text" id="basic-icon-default-email" class="form-control"
-                                    value="{{ $d->prodi }}" />
+                                    value="{{ $d->prodi }}" readonly style="background-color: transparent" />
                             </div>
                         </div>
                     </div>
@@ -71,7 +73,7 @@
                                 <span id="basic-icon-default-phone2" class="input-group-text"><i
                                         class="bx bx-user-circle"></i></span>
                                 <input type="text" id="basic-icon-default-phone" class="form-control phone-mask"
-                                    value="{{ $d->angkatan }}" />
+                                    value="{{ $d->angkatan }}"readonly style="background-color: transparent" />
                             </div>
                         </div>
                     </div>
@@ -82,7 +84,7 @@
                             <div class="input-group input-group-merge">
                                 <span class="input-group-text"><i class="bx bx-category-alt"></i></span>
                                 <input type="text" id="basic-icon-default-email" class="form-control"
-                                    value="{{ $d->kategori->kategori }}" />
+                                    value="{{ $d->kategori->kategori }}" readonly style="background-color: transparent" />
                             </div>
                         </div>
                     </div>
@@ -93,7 +95,7 @@
                             <div class="input-group input-group-merge">
                                 <span id="basic-icon-default-message2" class="input-group-text"><i
                                         class="bx bx-comment"></i></span>
-                                <textarea id="basic-icon-default-message" class="form-control">{{ $d->rincian }}</textarea>
+                                <textarea id="basic-icon-default-message" class="form-control" readonly style="background-color: transparent">{{ $d->rincian }}</textarea>
                             </div>
                         </div>
                     </div>

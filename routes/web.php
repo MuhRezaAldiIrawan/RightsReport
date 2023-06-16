@@ -21,6 +21,7 @@ Route::post('/logout', 'App\Http\Controllers\AuthController@logout');
 
 //Dashboard
 Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
+// Route::get('/dashboard', 'App\Http\Controllers\DashboardController@reportchart');
 
 //Kategori
 Route::get('/kategori', 'App\Http\Controllers\KategoriController@index');
@@ -28,7 +29,8 @@ Route::get('/kategori', 'App\Http\Controllers\KategoriController@index');
 //Report
 Route::get('/new_report', 'App\Http\Controllers\ReportController@new_report')->name('new_report');
 Route::get('/proggress_report', 'App\Http\Controllers\ReportController@proggress_report')->name('proggress_report');
-Route::get('/histori_report', 'App\Http\Controllers\ReportController@proggress_report')->name('histori_report');
+Route::get('/histori_report', 'App\Http\Controllers\ReportController@histori_report')->name('histori_report');
 Route::get('/detailreport/{id}', 'App\Http\Controllers\ReportController@detailreport');
 Route::post('/proses_report/{id}', 'App\Http\Controllers\ReportController@proses_report');
+Route::post('/end_report/{id}', 'App\Http\Controllers\ReportController@end_report');
 
