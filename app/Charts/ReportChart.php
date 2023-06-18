@@ -3,6 +3,7 @@
 namespace App\Charts;
 
 use ArielMejiaDev\LarapexCharts\LarapexChart;
+use App\Models\Report;
 
 class ReportChart
 {
@@ -12,12 +13,33 @@ class ReportChart
     {
         $this->chart = $chart;
     }
-    public function build()
+
+    public function build(): \ArielMejiaDev\LarapexCharts\donutChart
     {
-        return $this->chart->pieChart()
-            ->setTitle('Top 3 scorers of the team.')
-            ->setSubtitle('Season 2021.')
-            ->addData([40, 50, 30])
-            ->setLabels(['Player 7', 'Player 10', 'Player 9']);
+        $reportchart = Report::get();
+
+        $data = [
+            $reportchart->where('kategori_id','=','1')->count(),
+            $reportchart->where('kategori_id','=','2')->count(),
+            $reportchart->where('kategori_id','=','3')->count(),
+            $reportchart->where('kategori_id','=','4')->count(),
+            $reportchart->where('kategori_id','=','5')->count(),
+        ];
+
+        $labels = [
+            'Kekerasan',
+            'bullying',
+            'diskriminasi',
+            'Korupsi',
+            'Pembatasan Kebebasan'
+        ];
+
+        return $this->chart->donutChart()
+            ->setTitle('Data Pelaporan Pelanggaran HAM')
+            ->setSubtitle(date('Y'))
+            ->setWidth(500)
+            ->setHeight(500)
+            ->addData($data)
+            ->setLabels($labels);
     }
 }

@@ -5,6 +5,8 @@
 
 {{-- Content --}}
 @section('content')
+    \
+    @php use ArielMejiaDev\LarapexCharts\LarapexChart; @endphp
     <div class="col-lg-12 mb-4 order-0">
         <div class="card">
             <div class="d-flex align-items-end row">
@@ -181,11 +183,17 @@
             </div>
         </div>
     </div>
+
     <div class="p-6 m-20 bg-white rounded shadow">
-        {!! $chart->container() !!}
+        {!! $ReportChart->container() !!}
+        {!! $jurusanChart->container() !!}
     </div>
-    <script src="{{ $chart->cdn() }}"></script>
 
-    {{ $chart->script() }}
+    </div>
 
+    <script src="{{ $ReportChart->cdn() }}"></script>
+    <script src="{{ $jurusanChart->cdn() }}"></script>
+
+    {{ $ReportChart->script() }}
+    {{ $jurusanChart->script() }}
 @endsection
