@@ -16,35 +16,62 @@ class JurusanChart
 
     public function build(): \ArielMejiaDev\LarapexCharts\BarChart
     {
-        // $reportchart = Report::get();
 
-        // $data = [
-        //     $reportchart->where('jurusan','=','Akuntansi')->count(),
-        //     $reportchart->where('jurusan','=','Teknik Elektro')->count(),
-        //     $reportchart->where('jurusan','=','Teknik Mesin')->count(),
-        //     $reportchart->where('jurusan','=','Teknik Sipil')->count(),
-        //     $reportchart->where('jurusan','=','Teknik Kimia')->count(),
-        //     $reportchart->where('jurusan','=','Administrasi Niaga')->count(),
-        // ];
-
-        // $labels = [
-        //     'Kekerasan',
-        //     'bullying',
-        //     'diskriminasi',
-        //     'Korupsi',
-        //     'Pembatasan Kebebasan'
-        // ];
-
+        $jurusans = [
+            'Akuntansi',
+            'Teknik Elektro',
+            'Teknik Mesin',
+            'Teknik Sipil',
+            'Teknik Kimia',
+            'Administrasi Niaga'
+        ];
+        
+        $data = [
+            \App\Models\Report::where('jurusan', '=', 'Akuntansi')->count(),
+            \App\Models\Report::where('jurusan', '=', 'Teknik Elektro')->count(),
+            \App\Models\Report::where('jurusan', '=', 'Teknik Mesin')->count(),
+            \App\Models\Report::where('jurusan', '=', 'Teknik Sipil')->count(),
+            \App\Models\Report::where('jurusan', '=', 'Teknik Kimia')->count(),
+            \App\Models\Report::where('jurusan', '=', 'Administrasi Niaga')->count()
+        ];
+        
         return $this->chart->barChart()
-        ->setTitle('Pelanggaran HAM Di tingkat Jurusan.')
-        ->setSubtitle(date('Y'))
-        ->addData('Akuntansi', [\App\Models\Report::where('jurusan', '=', 'Akuntansi')->count()])
-        ->addData('Teknik Elektro', [\App\Models\Report::where('jurusan', '=', 'Teknik Elektro')->count()])
-        ->addData('Teknik Mesin', [\App\Models\Report::where('jurusan', '=', 'Teknik Mesin')->count()])
-        ->addData('Teknik Sipil', [\App\Models\Report::where('jurusan', '=', 'Teknik Sipil')->count()])
-        ->addData('Teknik Kimia', [\App\Models\Report::where('jurusan', '=', 'Teknik Kimia')->count()])
-        ->addData('Administrasi Niaga', [\App\Models\Report::where('jurusan', '=', 'Administrasi Niaga')->count()])
-        ->setXAxis(['Akuntansi', 'Teknik Elektro', 'Teknik Mesin', 'Teknik Sipil', 'Teknik Kimia', 'Administrasi Niaga']);
-    
+            // ->setTitle('Pelanggaran HAM Di tingkat Jurusan.')
+            ->setSubtitle(date('Y'))
+            ->addData('Jumlah', $data)
+            ->setXAxis($jurusans);
+        
     }
 }
+
+// $jurusans = [
+//     'Akuntansi',
+//     'Teknik Elektro',
+//     'Teknik Mesin',
+//     'Teknik Sipil',
+//     'Teknik Kimia',
+//     'Administrasi Niaga'
+// ];
+
+// $data = [];
+
+// foreach ($jurusans as $jurusan) {
+//     $count = Report::where('jurusan', $jurusan)->count();
+//     $data[] = $count;
+// }
+
+// $colors = [
+//     'Akuntansi' => '#FF6384',
+//     'Teknik Elektro' => '#36A2EB',
+//     'Teknik Mesin' => '#FFCE56',
+//     'Teknik Sipil' => '#4BC0C0',
+//     'Teknik Kimia' => '#9966FF',
+//     'Administrasi Niaga' => '#FF9F40'
+// ];
+
+// return $this->chart->barChart()
+//     ->setTitle('Pelanggaran HAM Di tingkat Jurusan.')
+//     ->setSubtitle(date('Y'))
+//     ->addData('Jumlah', $data)
+//     ->setColors(array_values($colors))
+//     ->setLabels($jurusans);
