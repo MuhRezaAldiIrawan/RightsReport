@@ -249,7 +249,7 @@
                 <div class="card-header d-flex align-items-center justify-content-between pb-0">
                     <div class="card-title mb-0">
                         <h5 class="m-0 me-2">Kasus Pelanggaran HAM Di Tingkat Jurusan</h5>
-                        <small class="text-muted">Berdasarkan Kategori Pelanggaran HAM</small>
+                        <small class="text-muted">Jumlah Pelanggaran HAM Di Setiap Jurusan</small>
                     </div>
                 </div>
                 <div class="card-body">

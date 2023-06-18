@@ -39,6 +39,8 @@ class JurusanChart
             // ->setTitle('Pelanggaran HAM Di tingkat Jurusan.')
             ->setSubtitle(date('Y'))
             ->addData('Jumlah', $data)
+            ->setFontFamily('DM Sans')
+            // ->setFontColor('#ff6384')
             ->setXAxis($jurusans);
         
     }
