@@ -34,3 +34,7 @@ Route::get('/detailreport/{id}', 'App\Http\Controllers\ReportController@detailre
 Route::post('/proses_report/{id}', 'App\Http\Controllers\ReportController@proses_report');
 Route::post('/end_report/{id}', 'App\Http\Controllers\ReportController@end_report');
 
+//Pesan
+Route::get('/email', 'App\Http\Controllers\EmailController@index');
+Route::post('/sendemail', 'App\Http\Controllers\EmailController@sendemail');
+

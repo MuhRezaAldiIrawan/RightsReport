@@ -43,6 +43,21 @@
             </a>
         </li>
 
+        <li class="menu-header small text-uppercase"><span class="menu-header-text">Pesan</span></li>
+
+        <li class="menu-item {{ request()->is('email') ? 'active' : '' }}">
+            <a href="/email" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-envelope"></i>
+                <div data-i18n="Analytics">Email</div>
+            </a>
+        </li>
+
+        <li class="menu-item {{ request()->is('kategori') ? 'active' : '' }}">
+            <a href="/kategori" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-chat"></i>
+                <div data-i18n="Analytics">Whatsapp</div>
+            </a>
+        </li>
 
         <li class="menu-header small text-uppercase"><span class="menu-header-text">Informasi</span></li>
 
@@ -50,6 +65,13 @@
             <a href="/kategori" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-category"></i>
                 <div data-i18n="Analytics">Kategori</div>
+            </a>
+        </li>
+
+        <li class="menu-item {{ request()->is('kategori') ? 'active' : '' }}">
+            <a href="/kategori" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div data-i18n="Analytics">profile</div>
             </a>
         </li>
     </ul>

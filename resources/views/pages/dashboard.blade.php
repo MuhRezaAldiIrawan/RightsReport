@@ -136,7 +136,7 @@
                     <div class="card-title d-flex align-items-start justify-content-between">
                         <div class="avatar flex-shrink-0">
                             <img src="{{ asset('img/icons/unicons/people.png') }}" alt="chart success" class="rounded"
-                                style="width: 10px; height: 10px" />
+                            />
                         </div>
                         <div class="dropdown">
                             <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown"

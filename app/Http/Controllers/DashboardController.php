@@ -17,7 +17,7 @@ class DashboardController extends Controller
 {
     public function index(ReportChart $ReportChart, JurusanChart $jurusanChart, ProdiChart $prodichart)
     {
-        $title = 'RightsReport | Dashboard';
+        $title = 'RightsReport | Dashboard'; $title = 'RightsReport | Dashboard';
 
 
         $jumlahactivity = Report::all()->where('status', '=', 'pending')->count();
