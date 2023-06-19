@@ -39,41 +39,9 @@ class JurusanChart
             // ->setTitle('Pelanggaran HAM Di tingkat Jurusan.')
             ->setSubtitle(date('Y'))
             ->addData('Jumlah', $data)
-            ->setFontFamily('DM Sans')
+            ->setFontFamily('cursive')
             // ->setFontColor('#ff6384')
             ->setXAxis($jurusans);
         
     }
 }
-
-// $jurusans = [
-//     'Akuntansi',
-//     'Teknik Elektro',
-//     'Teknik Mesin',
-//     'Teknik Sipil',
-//     'Teknik Kimia',
-//     'Administrasi Niaga'
-// ];
-
-// $data = [];
-
-// foreach ($jurusans as $jurusan) {
-//     $count = Report::where('jurusan', $jurusan)->count();
-//     $data[] = $count;
-// }
-
-// $colors = [
-//     'Akuntansi' => '#FF6384',
-//     'Teknik Elektro' => '#36A2EB',
-//     'Teknik Mesin' => '#FFCE56',
-//     'Teknik Sipil' => '#4BC0C0',
-//     'Teknik Kimia' => '#9966FF',
-//     'Administrasi Niaga' => '#FF9F40'
-// ];
-
-// return $this->chart->barChart()
-//     ->setTitle('Pelanggaran HAM Di tingkat Jurusan.')
-//     ->setSubtitle(date('Y'))
-//     ->addData('Jumlah', $data)
-//     ->setColors(array_values($colors))
-//     ->setLabels($jurusans);

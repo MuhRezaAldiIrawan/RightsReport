@@ -37,8 +37,8 @@ class ReportChart
         return $this->chart->donutChart()
             // ->setTitle('Data Pelaporan Pelanggaran HAM')
             ->setSubtitle(date('Y'))
-            ->setWidth(500)
-            ->setHeight(500)
+            ->setWidth(550)
+            ->setHeight(550)
             ->addData($data)
             ->setLabels($labels);
     }

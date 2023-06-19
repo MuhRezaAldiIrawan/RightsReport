@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Charts\JurusanChart;
+use App\Charts\ProdiChart;
 use App\Models\Report;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -14,7 +15,7 @@ use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class DashboardController extends Controller
 {
-    public function index(ReportChart $ReportChart, JurusanChart $jurusanChart)
+    public function index(ReportChart $ReportChart, JurusanChart $jurusanChart, ProdiChart $prodichart)
     {
         $title = 'RightsReport | Dashboard';
 
@@ -40,7 +41,8 @@ class DashboardController extends Controller
             'masuk' => $masuk,
             'proses' => $proses,
             'ReportChart' => $ReportChart->build(),
-            'jurusanChart' => $jurusanChart->build()
+            'jurusanChart' => $jurusanChart->build(),
+            'prodichart' => $prodichart->build()
         ]);
     }
 }
