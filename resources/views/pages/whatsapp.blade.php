@@ -194,6 +194,12 @@
     <div>
     </div>
 
+    <div>
+    </div>
+
+    <div>
+    </div>
+    
     <script src="{{ asset('js/vendors.min.js') }}"></script>
     <script src="{{ asset('js/quill.min.js') }}"></script>
     <script src="{{ asset('js/mail.js') }}"></script>
