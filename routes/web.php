@@ -36,5 +36,6 @@ Route::post('/end_report/{id}', 'App\Http\Controllers\ReportController@end_repor
 
 //Pesan
 Route::get('/email', 'App\Http\Controllers\EmailController@index');
+Route::get('/whatsapp', 'App\Http\Controllers\WhatsappController@index');
 // Route::post('/sendemail', 'App\Http\Controllers\EmailController@sendemail');
 

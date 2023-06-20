@@ -52,8 +52,8 @@
             </a>
         </li>
 
-        <li class="menu-item {{ request()->is('kategori') ? 'active' : '' }}">
-            <a href="/kategori" class="menu-link">
+        <li class="menu-item {{ request()->is('whatsapp') ? 'active' : '' }}">
+            <a href="/whatsapp" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-chat"></i>
                 <div data-i18n="Analytics">Whatsapp</div>
             </a>

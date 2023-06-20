@@ -120,12 +120,12 @@
                                         <div class="avatar avatar-image avatar-sm">
                                             <img src="{{ asset('img/logo/logo100.png ') }}" alt="Logo">
                                         </div>
-                                        <h6 class="m-l-10 m-b-0">Erin Gonzales</h6>
+                                        <h6 class="m-l-10 m-b-0">Ahmad Fauzy</h6>
                                     </div>
                                 </td>
                                 <td class="list-content">
                                     <div class="list-msg">
-                                        <span class="list-title">All flight trooper</span>
+                                        <span class="list-title">Kasus Kekerasan</span>
                                         <span class="m-h-5 d-none d-lg-inline-block"> - </span>
                                         <span class="list-text text-gray"> Hi Erin, Somebody's coming. Oh!
                                             Luke! Where's Leia? What? She didn't come back? I thought she
@@ -137,39 +137,6 @@
                                 </td>
                                 <td class="list-date">
                                     <span>12:06PM</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="mail-list">
-                        <div class="checkbox d-inline-block">
-                            <input id="mail-checkbox-2" type="checkbox">
-                            <label for="mail-checkbox-2"></label>
-                        </div>
-                        <table class="table list-info">
-                            <tr>
-                                <td class="list-sender">
-                                    <div class="media align-items-center">
-                                        <div class="avatar avatar-image avatar-sm">
-                                            <img src="{{ asset('img/logo/logo100.png ') }}" alt="Logo">
-                                        </div>
-                                        <h6 class="m-l-10 m-b-0">Darryl Day</h6>
-                                    </div>
-                                </td>
-                                <td class="list-content">
-                                    <div class="list-msg">
-                                        <span class="list-title">What are you doing?</span>
-                                        <span class="m-h-5 d-none d-lg-inline-block"> - </span>
-                                        <span class="list-text text-gray"> Hi Darryl, Good luck. You're
-                                            gonna need it. General Madine. We have stolen a small Imperial
-                                            shuttle. Disguised as a cargo ship, and using a secret Imperial
-                                            code, a strike team will land on the moon and deactivate the
-                                            shield generator. Sounds dangerous. I wonder who they found
-                                            to</span>
-                                    </div>
-                                </td>
-                                <td class="list-date">
-                                    <span>5:34AM</span>
                                 </td>
                             </tr>
                         </table>
@@ -227,13 +194,13 @@
                     <div class="d-flex align-items-center m-b-15 p-l-30">
                         <span class="text-gray m-r-15">12:06PM</span>
                         <a class="text-gray font-size-18 m-r-20">
-                            <i class="fas fa-reply"></i>
+                            <i class='bx bx-reply'></i>
                         </a>
                         <a class="text-gray font-size-18 m-r-20">
-                            <i class="far fa-star"></i>
+                            <i class='bx bx-star' ></i>
                         </a>
                         <a class="text-gray font-size-18 m-r-20">
-                            <i class="far fa-trash-alt"></i>
+                            <i class='bx bx-trash' ></i>
                         </a>
                     </div>
                 </div>
