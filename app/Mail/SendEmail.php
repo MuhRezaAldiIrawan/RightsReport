@@ -11,16 +11,17 @@ class SendEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $data_email;
+    public $details;
+
 
     /**
      * Create a new message instance.
      *
      * @param array $data_email
      */
-    public function __construct($data_email)
+public function __construct($details)
     {
-        $this->data_email = $data_email;
+        $this->details = $details;
     }
 
     /**
@@ -30,8 +31,6 @@ class SendEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject($this->data_email['subject'])
-                    ->from($this->data_email['sender_email'], $this->data_email['sender_name'])
-                    ->view('pages.email');
+        return $this->subject('Laporan Pelanggaran HAM')->view('pages.SendEmail');
     }
 }
