@@ -13,16 +13,6 @@ class EmailController extends Controller
         $title = 'RightsReport | Email';
 
         return view('pages.email', compact('title'));
-        // $pesan = "<p>Pesan Uji Coba 2</p>";
-
-        // $data_email = [
-        //     'subject' => 'Coba',
-        //     'sender_name' => 'titaniaelvs@gmail.com',
-        //     'isi' => $pesan
-        // ];
-
-        // Mail::to("rezaaldiirawan007@gmail.com")->send(new SendEmail($data_email));
-        // return '<h1> Berhasil Mengirim Email </h1>';
     }
 
 

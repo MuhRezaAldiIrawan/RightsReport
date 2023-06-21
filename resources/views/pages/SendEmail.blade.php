@@ -1,6 +1,4 @@
 
-
-
 <body>
     <p>Hallo <b>{{$details['to']}}</b> </p>
     <table>
