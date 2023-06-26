@@ -40,6 +40,11 @@ class MainController extends Controller
     {
         return view('pages.main.diskriminasi');
     }
+
+    public function report(Request $request)
+    {
+        return view('pages.main.report');
+    }
     
 
     

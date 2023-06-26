@@ -21,6 +21,10 @@ Route::get('/kekerasan', 'App\Http\Controllers\MainController@kekerasan');
 Route::get('/bullying', 'App\Http\Controllers\MainController@bullying');
 Route::get('/pembatasankebebasan', 'App\Http\Controllers\MainController@pembatasankebebasan');
 Route::get('/diskriminasi', 'App\Http\Controllers\MainController@diskriminasi');
+Route::get('/report', 'App\Http\Controllers\MainController@report');
+
+
+
 //Auth
 Route::get('/login', 'App\Http\Controllers\AuthController@index');
 Route::get('/register', 'App\Http\Controllers\AuthController@register');
