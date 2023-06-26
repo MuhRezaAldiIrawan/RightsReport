@@ -11,6 +11,6 @@ class WhatsappController extends Controller
         $title = 'RightsReport | Whatsapp';
 
         return view('pages.whatsapp', compact('title'));
-        // $pesan = "<p>Pesan Uji Coba 2</p>";
+
     }
 }
