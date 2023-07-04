@@ -22,6 +22,8 @@ Route::get('/bullying', 'App\Http\Controllers\MainController@bullying');
 Route::get('/pembatasankebebasan', 'App\Http\Controllers\MainController@pembatasankebebasan');
 Route::get('/diskriminasi', 'App\Http\Controllers\MainController@diskriminasi');
 Route::get('/report', 'App\Http\Controllers\MainController@report');
+Route::post('/report', 'App\Http\Controllers\MainController@addreport');
+
 
 
 

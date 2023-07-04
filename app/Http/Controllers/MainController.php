@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Report;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class MainController extends Controller
 {
@@ -45,6 +47,35 @@ class MainController extends Controller
     {
         return view('pages.main.report');
     }
+
+    public function addreport(Request $request)
+    {
+        // dd($request);
+        $validatedData = $request->validate([
+            'nama' => 'required',
+            'email' => 'required',
+            'hp' => 'required',
+            'jurusan' => 'required',
+            'prodi' => 'required',
+            'angkatan' => 'required',
+            'kategori_id' => 'required',
+            'rincian' => 'required',
+            'bukti' => 'image|file',
+            'status' => 'required'
+
+        ]);
+
+        if ($request->file('bukti')) {
+            $validatedData['bukti'] = $request->file('bukti')->store('foto-bukti');
+        }
+
+        Report::create($validatedData);
+
+        Alert::success('Success', 'Pengaduan berhasil dilakukan');
+        return redirect('/report');
+    }
+
+    
     
 
     

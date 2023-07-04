@@ -29,7 +29,8 @@
     }
 </style>
 <body>
-    <a href="Pengaduan.html" target="_blank">
+    @include('sweetalert::alert')
+    <a href="/report" target="_blank">
         <button class="btn-floating cs">
             <img src="{{ ('main/images/customer-service (1).png') }}" alt="CS">
             <span><strong>Form Pengaduan!</strong></span>
@@ -97,7 +98,7 @@
                                         <p>+62(411)585365</p>
                                     </div>
                                     <div class="button">
-                                        <a href="#" class="main-btn">Get Started</a>
+                                        <a href="/login" class="main-btn">Login</a>
                                     </div>
                                     
                                 </div>
@@ -139,7 +140,7 @@
                                             <a href="tentangkami.html">Tentang Kami</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="Pengaduan.html">Pengaduan</a>
+                                            <a href="/report">Pengaduan</a>
                                         </li>
                                     </ul>
                                 </div>

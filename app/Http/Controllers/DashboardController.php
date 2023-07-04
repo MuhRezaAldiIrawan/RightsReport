@@ -28,7 +28,7 @@ class DashboardController extends Controller
         $korupsi = Report::all()->where('kategori_id', '=', '4')->count();
         $kebebasan = Report::all()->where('kategori_id', '=', '5')->count();
 
-        $masuk = Report::all()->where('status', '=', 'masuk')->count();
+        $masuk = Report::all()->where('status', '=', 'new')->count();
         $proses = Report::all()->where('status', '=', 'proses')->count();
 
 

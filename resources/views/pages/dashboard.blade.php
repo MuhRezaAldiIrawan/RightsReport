@@ -10,10 +10,10 @@
             <div class="d-flex align-items-end row">
                 <div class="col-sm-7">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Welcome Developer Llen 🎉</h5>
+                        <h5 class="card-title text-primary">Welcome Admin 🎉</h5>
 
                         <p class="mb-4">
-                            Kamu Punya <span class="fw-bold"></span> Report Yang Masuk
+                            Kamu Punya <span class="fw-bold">2</span> Laporan Yang Masuk
                         </p>
 
                         <a href="/toll" class="btn btn-sm btn-outline-primary">View Report</a>

@@ -5,7 +5,6 @@
 
 {{-- Content --}}
 @section('content')
-  
     <h5 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Report /</span>Detail Report<i
             class='bx bx-street-view m-1'></i></h5>
 
@@ -22,7 +21,8 @@
                             <div class="input-group input-group-merge">
                                 <span id="basic-icon-default-fullname2" class="input-group-text"><i
                                         class="bx bx-user"></i></span>
-                                <input type="text" class="form-control active" value="{{ $d->nama }}" readonly style="background-color: transparent"/>
+                                <input type="text" class="form-control active" value="{{ $d->nama }}" readonly
+                                    style="background-color: transparent" />
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,8 @@
                         <div class="col-sm-10">
                             <div class="input-group input-group-merge">
                                 <span class="input-group-text"><i class="bx bx-envelope"></i></span>
-                                <input type="text" class="form-control" value="{{ $d->email }}" readonly style="background-color: transparent" />
+                                <input type="text" class="form-control" value="{{ $d->email }}" readonly
+                                    style="background-color: transparent" />
                             </div>
                         </div>
                     </div>
@@ -41,8 +42,8 @@
                             <div class="input-group input-group-merge">
                                 <span id="basic-icon-default-phone2" class="input-group-text"><i
                                         class="bx bx-phone"></i></span>
-                                <input type="text" class="form-control phone-mask" value="{{ $d->hp }}"
-                                readonly style="background-color: transparent" />
+                                <input type="text" class="form-control phone-mask" value="{{ $d->hp }}" readonly
+                                    style="background-color: transparent" />
                             </div>
                         </div>
                     </div>
@@ -52,7 +53,8 @@
                             <div class="input-group input-group-merge">
                                 <span id="basic-icon-default-fullname2" class="input-group-text"><i
                                         class="bx bx-building-house"></i></span>
-                                <input type="text" class="form-control" value="{{ $d->jurusan }}" readonly style="background-color: transparent" />
+                                <input type="text" class="form-control" value="{{ $d->jurusan }}" readonly
+                                    style="background-color: transparent" />
                             </div>
                         </div>
                     </div>
@@ -101,16 +103,24 @@
                     </div>
 
                     <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Bukti Foto Pelanggaran</label>
+                        <label class="col-sm-2 form-label" for="basic-icon-default-message">Buktis</label>
                         <div class="col-sm-10">
                             <div class="input-group input-group-merge">
-                                <span class="input-group-text"><i class="bx bx-envelope"></i></span>
-                                {{-- <input type="text" id="basic-icon-default-email" class="form-control"
-                                    placeholder="john.doe" aria-label="john.doe"
-                                    aria-describedby="basic-icon-default-email2" /> --}}
+                                @foreach ($detailreport as $d)
+                                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                        @if ($d->bukti)
+                                            <img class="card-img card-img-left" src="{{ asset('storage/' . $d->bukti) }}"
+                                                style="width:250px" alt="Card image" />
+                                        @else
+                                            <img src="{{ asset('img/Logo/mun.png') }}" alt=""
+                                                style="max-height: 200px; width: 180px">
+                                        @endif
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
+
 
                     <div class="row justify-content-end">
                         <div class="col-sm-10">

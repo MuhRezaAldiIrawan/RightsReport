@@ -187,8 +187,8 @@
                             <img src="{{ asset('img/logo/logo100.png ') }}" alt="Logo">
                         </div>
                         <div class="m-l-10">
-                            <h6 class="m-b-0">Erin Gonzales</h6>
-                            <span class="text-muted font-size-13">To: nathan@themenate.com</span>
+                            <h6 class="m-b-0">Admin Pengaduan</h6>
+                            <span class="text-muted font-size-13">To: AhmadFauzy@gmail.com</span>
                         </div>
                     </div>
                     <div class="d-flex align-items-center m-b-15 p-l-30">
@@ -205,22 +205,14 @@
                     </div>
                 </div>
                 <div class="m-t-30 p-h-30">
-                    <h4>All flight trooper</h4>
+                    <h4>Tindak Lanjut Laporan</h4>
                     <div class="m-t-30">
-                        <p>Hi Erin,</p>
-                        <p>Somebody's coming. Oh! Luke! Where's Leia? What? She didn't come back? I thought
-                            she was with you. We got separated. Hey, we better go look for her. Take the
-                            squad ahead. We'll meet at the shield generator at 0300. Come on, Artoo. We'll
-                            need your scanners. Don't worry, Master Luke. We know what to do. And you said
-                            it was pretty here. Ugh!.</p>
-                        <p>This can't be! Artoo, you're playing the wrong message. There will be no bargain.
-                            We're doomed. I will not give up my favorite decoration. I like Captain Solo
-                            where he is. Artoo, look! Captain Solo. And he's still frozen in carbonite. What
-                            could possibly have come over Master Luke. Is it something I did? He never
-                            expressed any unhappiness with my work. Oh! Oh! Hold it! Ohh!</p>
-                        <p>Your fleet has lost. And your friends on the Endor moon will not survive. There
-                            is no escape, my young apprentice. </p>
-                        <p>Moruth Doole, </p>
+                        <p>Selamat Siang,</p>
+                        <p>Hai, saya Admin Pengaduan Kasus pelanggaran Kasus HAM di kampus Politeknik Negeri Ujung Pandang. Anda telah mengirimkan laporan terkait dengan kasus pelanggaran HAM Tindak kekerasan di ruang lingkup kampus yang dimana merupakan tindakan yang tidak dapat dibenarkan. Kami akan melakukan penindakan selanjutnya terkait dengan kasus anda </p>
+                        <p>
+                            Silahkan isi form dan dokumen berikut dan silahkan print lalu bawa ke kantor Akademik atau dapat melihat alamat langsung pada website. besar harapan kami agar kasus anda cepat di tindak lanjuti
+                        </p>
+                        <p>Admin Pengaduan, </p>
                     </div>
                     <div class="m-t-30">
                         <a class="file" href="" style="min-width: 200px">
@@ -229,7 +221,7 @@
                                     <i class='bx bxs-file-doc text-danger'></i>
                                 </div>
                                 <div>
-                                    <h6 class="mb-0">Prospectus.doc</h6>
+                                    <h6 class="mb-0">Form Laporan.doc</h6>
                                     <span class="font-size-13 text-muted">1MB</span>
                                 </div>
                             </div>
@@ -240,7 +232,7 @@
                                     <i class='bx bxs-file-doc text-success'></i>
                                 </div>
                                 <div>
-                                    <h6 class="mb-0">Financial_Report.xls</h6>
+                                    <h6 class="mb-0">Kerugian.xls</h6>
                                     <span class="font-size-13 text-muted">652KB</span>
                                 </div>
                             </div>
